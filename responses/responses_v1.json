@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "input": "I love this product, it's amazing",
+        "output": "The sentiment of the sentence is: Positive."
+    },
+    {
+        "id": 2,
+        "input": "The service was terrible, I'm never coming back",
+        "output": "The sentiment of this sentence is: Negative."
+    },
+    {
+        "id": 3,
+        "input": "The weather is sunny today",
+        "output": "The sentiment of the sentence \"The weather is sunny today\" is Positive."
+    },
+    {
+        "id": 4,
+        "input": "This movie is okay, nothing special",
+        "output": "I would classify the sentiment of this sentence as Neutral. The user doesn't express strong emotions or opinions, and the phrase \"nothing special\" implies a lack of enthusiasm, but the word \"okay\" suggests that the movie is not entirely bad either. Overall, the tone is middling and neither overwhelmingly positive nor negative."
+    },
+    {
+        "id": 5,
+        "input": "I'm so excited for my upcoming vacation",
+        "output": "The sentiment of the sentence \"I'm so excited for my upcoming vacation\" is: Positive."
+    },
+    {
+        "id": 6,
+        "input": "The food at this restaurant is disgusting",
+        "output": "The sentiment of the sentence \"The food at this restaurant is disgusting\" is Negative."
+    },
+    {
+        "id": 7,
+        "input": "The new policy is being implemented next month",
+        "output": "The sentiment of the sentence \"The new policy is being implemented next month\" is Neutral. The sentence simply states a fact about the implementation of a policy without expressing any emotion or opinion, neither positive nor negative."
+    },
+    {
+        "id": 8,
+        "input": "I'm really disappointed with the customer support",
+        "output": "The sentiment of the sentence is: Negative. \n\nThe word \"disappointed\" has a strong negative connotation, indicating that the user's experience with the customer support was unsatisfactory."
+    },
+    {
+        "id": 9,
+        "input": "The hotel room was clean and comfortable",
+        "output": "The sentiment of the sentence \"The hotel room was clean and comfortable\" is: Positive."
+    },
+    {
+        "id": 10,
+        "input": "The company's financial report is available online",
+        "output": "The sentiment of the sentence \"The company's financial report is available online\" is Neutral. The sentence is simply stating a fact without expressing any emotion or opinion, neither positive nor negative."
+    }
+]

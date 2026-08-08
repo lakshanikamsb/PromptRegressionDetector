@@ -1,0 +1,72 @@
+[
+    {
+        "Test Case": "I love this product, it's amazing",
+        "Old Output": "The sentiment of the sentence is: Positive.",
+        "New Output": "That's great to hear. What specifically do you like about the product? Is it the design, the features, or something else entirely?",
+        "Similarity": 0.17,
+        "Status": "Regression Detected"
+    },
+    {
+        "Test Case": "The service was terrible, I'm never coming back",
+        "Old Output": "The sentiment of this sentence is: Negative.",
+        "New Output": "It seems like you had a very different experience with the product and the service. Can you tell me more about what went wrong? Was it with the purchase, installation, or maintenance of the product? I'd like to understand what happened and see if there's anything that can be done to improve the situation.",
+        "Similarity": 0.03,
+        "Status": "Regression Detected"
+    },
+    {
+        "Test Case": "The weather is sunny today",
+        "Old Output": "The sentiment of the sentence \"The weather is sunny today\" is Positive.",
+        "New Output": "That's great to hear about the weather. However, I was just discussing a product that I'm really satisfied with. Would you like to know more about it?",
+        "Similarity": 0.29,
+        "Status": "Regression Detected"
+    },
+    {
+        "Test Case": "This movie is okay, nothing special",
+        "Old Output": "I would classify the sentiment of this sentence as Neutral. The user doesn't express strong emotions or opinions, and the phrase \"nothing special\" implies a lack of enthusiasm, but the word \"okay\" suggests that the movie is not entirely bad either. Overall, the tone is middling and neither overwhelmingly positive nor negative.",
+        "New Output": "It seems like we're discussing two different things. You initially mentioned a product that you love, but now you're talking about a movie. Could you tell me more about the movie you're referring to? What did you like or dislike about it?",
+        "Similarity": 0.04,
+        "Status": "Regression Detected"
+    },
+    {
+        "Test Case": "I'm so excited for my upcoming vacation",
+        "Old Output": "The sentiment of the sentence \"I'm so excited for my upcoming vacation\" is: Positive.",
+        "New Output": "That's great to hear that you're excited about your vacation. Are you planning on taking the product with you, or is there something else you're looking forward to on your trip?",
+        "Similarity": 0.3,
+        "Status": "Regression Detected"
+    },
+    {
+        "Test Case": "The food at this restaurant is disgusting",
+        "Old Output": "The sentiment of the sentence \"The food at this restaurant is disgusting\" is Negative.",
+        "New Output": "That's quite a contrast. It seems like you're having two very different experiences. You're extremely satisfied with a product, but the food at the restaurant is not meeting your expectations at all. Would you like to talk more about what's not working out with the restaurant food or is there something specific you'd like to know about the product you're happy with?",
+        "Similarity": 0.04,
+        "Status": "Regression Detected"
+    },
+    {
+        "Test Case": "The new policy is being implemented next month",
+        "Old Output": "The sentiment of the sentence \"The new policy is being implemented next month\" is Neutral. The sentence simply states a fact about the implementation of a policy without expressing any emotion or opinion, neither positive nor negative.",
+        "New Output": "That's great to hear about the product, but I'm a bit confused. You mentioned that the new policy is being implemented next month. Could you please clarify what policy you're referring to and how it relates to the product you mentioned earlier? I'd love to understand the connection between the two.",
+        "Similarity": 0.22,
+        "Status": "Regression Detected"
+    },
+    {
+        "Test Case": "I'm really disappointed with the customer support",
+        "Old Output": "The sentiment of the sentence is: Negative. \n\nThe word \"disappointed\" has a strong negative connotation, indicating that the user's experience with the customer support was unsatisfactory.",
+        "New Output": "System Response:\n\"I'm so sorry to hear that you're having a poor experience with our customer support. Can you please tell me more about what happened? What issue were you trying to resolve, and how did our support team respond? Your feedback is invaluable in helping us improve our service.\"",
+        "Similarity": 0.02,
+        "Status": "Regression Detected"
+    },
+    {
+        "Test Case": "The hotel room was clean and comfortable",
+        "Old Output": "The sentiment of the sentence \"The hotel room was clean and comfortable\" is: Positive.",
+        "New Output": "That's great to hear. It sounds like you had a pleasant stay at the hotel. The cleanliness and comfort of a hotel room can really make or break a trip. Did you have a favorite amenity or feature of the room, or was there something in particular that stood out to you?",
+        "Similarity": 0.06,
+        "Status": "Regression Detected"
+    },
+    {
+        "Test Case": "The company's financial report is available online",
+        "Old Output": "The sentiment of the sentence \"The company's financial report is available online\" is Neutral. The sentence is simply stating a fact without expressing any emotion or opinion, neither positive nor negative.",
+        "New Output": "That's great to know. However, I was just sharing my positive experience with the product. Is there something specific you'd like to know about the company's financial report or how it relates to the product?",
+        "Similarity": 0.17,
+        "Status": "Regression Detected"
+    }
+]

@@ -1,0 +1,10 @@
+{
+    "old_prompt": "Answer customer questions politely and provide solutions.",
+    "new_prompt": "Answer customer questions quickly.",
+    "old_score": 100,
+    "new_score": 50,
+    "result": {
+        "status": "Regression Detected",
+        "score_drop": 50
+    }
+}

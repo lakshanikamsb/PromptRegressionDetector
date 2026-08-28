@@ -1,52 +1,52 @@
 [
     {
         "id": 1,
-        "input": "I love this product, it's amazing",
-        "output": "The sentiment of the sentence is: Positive."
+        "input": "Hi, I received a damaged product. What should I do?",
+        "output": "I\u2019m really sorry to hear that your item arrived damaged. Let\u2019s get this sorted out for you right away.\n\n1. **Take a photo** \u2013 If possible, please snap a clear picture of the damage and the packaging.  \n2. **Tell us what happened** \u2013 Let us know if the item was broken on arrival, if the packaging was crushed, or if there\u2019s any other issue.  \n3. **Choose a resolution** \u2013  \n   * **Replacement** \u2013 We\u2019ll ship a brand\u2011new item to you at no extra cost.  \n   * **Refund** \u2013 We can issue a full refund (including shipping, if applicable).  \n   * **Return & refund** \u2013 If you prefer, we can arrange a prepaid return label and refund once we receive the damaged item.  \n\nOnce you let us know which option you\u2019d like, we\u2019ll send you the next steps and any necessary shipping labels.  \n\nAgain, I\u2019m sorry for the inconvenience. Your satisfaction is our priority, and we\u2019ll make sure this gets resolved quickly. If you have any questions or need further assistance, just reply to this message or call our support line at 1\u2011800\u2011555\u20111234."
     },
     {
         "id": 2,
-        "input": "The service was terrible, I'm never coming back",
-        "output": "The sentiment of this sentence is: Negative."
+        "input": "Can you tell me the status of my order #12345?",
+        "output": "Hello! Thank you for reaching out. I\u2019m looking into the status of order\u202f#12345 right now. I\u2019ll get back to you with the most up\u2011to\u2011date information within the next few minutes. If you have any other questions in the meantime, feel free to let me know!"
     },
     {
         "id": 3,
-        "input": "The weather is sunny today",
-        "output": "The sentiment of the sentence \"The weather is sunny today\" is Positive."
+        "input": "I'm not satisfied with the service, I'd like to speak to a manager.",
+        "output": "I\u2019m really sorry to hear that you\u2019re disappointed with our service. I understand how frustrating that can be. I\u2019ll connect you with a manager right away so they can address your concerns. In the meantime, if there\u2019s anything specific you\u2019d like me to note or help with, please let me know."
     },
     {
         "id": 4,
-        "input": "This movie is okay, nothing special",
-        "output": "I would classify the sentiment of this sentence as Neutral. The user doesn't express strong emotions or opinions, and the phrase \"nothing special\" implies a lack of enthusiasm, but the word \"okay\" suggests that the movie is not entirely bad either. Overall, the tone is middling and neither overwhelmingly positive nor negative."
+        "input": "Could you explain the return policy?",
+        "output": "Sure! I\u2019d be happy to walk you through our return policy.\n\n| **What you can return** | **Timeframe** | **Condition** | **How to return** | **Refund/Exchange** |\n|------------------------|---------------|---------------|-------------------|---------------------|\n| All items (except final\u2011sale or custom\u2011made products) | 30 days from the date of delivery | Unused, with original tags, and in the original packaging | 1. Log in to your account and go to \u201cOrder History.\u201d 2. Select the order and click \u201cReturn/Exchange.\u201d 3. Follow the prompts to print a prepaid return label. 4. Pack the item securely and drop it off at the nearest carrier location. | \u2022\u202fRefund to original payment method (within 5\u20137 business days after we receive the item).  <br>\u2022\u202fExchange for another item of equal or lesser value (subject to availability). |\n| Digital downloads | 7 days from purchase | Must be unused | Contact support with order number; we\u2019ll issue a refund or replacement. | Refund to original payment method. |\n\n**Additional details**\n\n- **Restocking fee**: None for most items. For certain categories (e.g., electronics, large appliances) a small restocking fee may apply if the item is opened or used.\n- **Shipping costs**: Return shipping is free for most orders. If you\u2019re returning an item that was defective or wrong, we\u2019ll cover the return postage. For other returns, you\u2019ll cover the shipping cost unless you\u2019re eligible for a return\u2011shipping credit.\n- **Defective or damaged items**: If the item arrives damaged or defective, please contact us within 48\u202fhours of receipt. We\u2019ll arrange a replacement or refund and cover the return shipping.\n- **Custom orders**: Custom or personalized items are non\u2011returnable unless they\u2019re defective.\n\nIf you have a specific order in mind or need help starting a return, just let me know the order number and I\u2019ll guide you through the process. Thanks for shopping with us!"
     },
     {
         "id": 5,
-        "input": "I'm so excited for my upcoming vacation",
-        "output": "The sentiment of the sentence \"I'm so excited for my upcoming vacation\" is: Positive."
+        "input": "Hello, I need help with my account password.",
+        "output": "Hello! I\u2019m happy to help you with your account password.\n\nTo reset your password, please follow these steps:\n\n1. **Go to the login page** of our website or app.  \n2. Click the **\u201cForgot password?\u201d** link.  \n3. Enter the email address or username associated with your account.  \n4. Check your inbox (and spam/junk folder) for a password\u2011reset email.  \n5. Click the link in that email and follow the prompts to set a new password.\n\nIf you don\u2019t receive the email within a few minutes, let me know and I\u2019ll double\u2011check that we have the correct address on file.  \n\nIf you\u2019re still having trouble, feel free to share any error messages you see, and I\u2019ll help you troubleshoot further."
     },
     {
         "id": 6,
-        "input": "The food at this restaurant is disgusting",
-        "output": "The sentiment of the sentence \"The food at this restaurant is disgusting\" is Negative."
+        "input": "Thank you for the quick response!",
+        "output": "You\u2019re very welcome! If there\u2019s anything else you need or any other questions I can help with, just let me know. Have a great day!"
     },
     {
         "id": 7,
-        "input": "The new policy is being implemented next month",
-        "output": "The sentiment of the sentence \"The new policy is being implemented next month\" is Neutral. The sentence simply states a fact about the implementation of a policy without expressing any emotion or opinion, neither positive nor negative."
+        "input": "Is there a discount for bulk orders?",
+        "output": "Hello! \ud83d\udc4b\n\nThank you for reaching out. We do offer discounts for bulk orders, and we\u2019d love to help you get the best pricing possible.\n\nCould you let us know:\n- The product(s) you\u2019re interested in\n- The quantity you\u2019re looking to order\n- Any specific delivery or timeline requirements\n\nOnce we have those details, we can provide a tailored quote and outline the discount structure for you. If you have any other questions or special requests, feel free to let us know\u2014happy to assist!"
     },
     {
         "id": 8,
-        "input": "I'm really disappointed with the customer support",
-        "output": "The sentiment of the sentence is: Negative. \n\nThe word \"disappointed\" has a strong negative connotation, indicating that the user's experience with the customer support was unsatisfactory."
+        "input": "I want to cancel my subscription.",
+        "output": "Sure, I can help with that.  \nCould you please confirm the email address or account ID associated with the subscription you\u2019d like to cancel? Once I have that, I\u2019ll walk you through the cancellation process and let you know what to expect next. If you have any questions or need assistance with anything else, just let me know!"
     },
     {
         "id": 9,
-        "input": "The hotel room was clean and comfortable",
-        "output": "The sentiment of the sentence \"The hotel room was clean and comfortable\" is: Positive."
+        "input": "Do you offer international shipping?",
+        "output": "Absolutely! We do ship internationally. Our shipping partners cover most countries worldwide, and we\u2019ll provide you with a tracking number once your order has shipped. If you let me know which country you\u2019re located in, I can give you a more precise estimate of delivery time and any applicable customs fees. Feel free to ask if you need help with anything else!"
     },
     {
         "id": 10,
-        "input": "The company's financial report is available online",
-        "output": "The sentiment of the sentence \"The company's financial report is available online\" is Neutral. The sentence is simply stating a fact without expressing any emotion or opinion, neither positive nor negative."
+        "input": "Please provide the tracking number for my shipment.",
+        "output": "I\u2019m happy to help! Could you please share your order number or the email address associated with the purchase? Once I have that, I\u2019ll look up the tracking details for you right away."
     }
 ]

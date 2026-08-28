@@ -1,72 +1,72 @@
 [
     {
-        "Test Case": "I love this product, it's amazing",
-        "Old Output": "The sentiment of the sentence is: Positive.",
-        "New Output": "That's great to hear. What specifically do you like about the product? Is it the design, the features, or something else entirely?",
-        "Similarity": 0.17,
+        "Test Case": "Hi, I received a damaged product. What should I do?",
+        "Old Output": "I\u2019m really sorry to hear that your item arrived damaged. Let\u2019s get this sorted out for you right away.\n\n1. **Take a photo** \u2013 If possible, please snap a clear picture of the damage and the packaging.  \n2. **Tell us what happened** \u2013 Let us know if the item was broken on arrival, if the packaging was crushed, or if there\u2019s any other issue.  \n3. **Choose a resolution** \u2013  \n   * **Replacement** \u2013 We\u2019ll ship a brand\u2011new item to you at no extra cost.  \n   * **Refund** \u2013 We can issue a full refund (including shipping, if applicable).  \n   * **Return & refund** \u2013 If you prefer, we can arrange a prepaid return label and refund once we receive the damaged item.  \n\nOnce you let us know which option you\u2019d like, we\u2019ll send you the next steps and any necessary shipping labels.  \n\nAgain, I\u2019m sorry for the inconvenience. Your satisfaction is our priority, and we\u2019ll make sure this gets resolved quickly. If you have any questions or need further assistance, just reply to this message or call our support line at 1\u2011800\u2011555\u20111234.",
+        "New Output": "I\u2019m sorry to hear that! Please contact our support team with your order number and a photo of the damage. They\u2019ll arrange a return and issue a refund or replacement right away.",
+        "Similarity": 0.18,
         "Status": "Regression Detected"
     },
     {
-        "Test Case": "The service was terrible, I'm never coming back",
-        "Old Output": "The sentiment of this sentence is: Negative.",
-        "New Output": "It seems like you had a very different experience with the product and the service. Can you tell me more about what went wrong? Was it with the purchase, installation, or maintenance of the product? I'd like to understand what happened and see if there's anything that can be done to improve the situation.",
-        "Similarity": 0.03,
+        "Test Case": "Can you tell me the status of my order #12345?",
+        "Old Output": "Hello! Thank you for reaching out. I\u2019m looking into the status of order\u202f#12345 right now. I\u2019ll get back to you with the most up\u2011to\u2011date information within the next few minutes. If you have any other questions in the meantime, feel free to let me know!",
+        "New Output": "Your order #12345 is currently being processed and will ship within the next 24\u201348\u202fhours. I\u2019ll send you a tracking number as soon as it\u2019s available.",
+        "Similarity": 0.37,
         "Status": "Regression Detected"
     },
     {
-        "Test Case": "The weather is sunny today",
-        "Old Output": "The sentiment of the sentence \"The weather is sunny today\" is Positive.",
-        "New Output": "That's great to hear about the weather. However, I was just discussing a product that I'm really satisfied with. Would you like to know more about it?",
-        "Similarity": 0.29,
+        "Test Case": "I'm not satisfied with the service, I'd like to speak to a manager.",
+        "Old Output": "I\u2019m really sorry to hear that you\u2019re disappointed with our service. I understand how frustrating that can be. I\u2019ll connect you with a manager right away so they can address your concerns. In the meantime, if there\u2019s anything specific you\u2019d like me to note or help with, please let me know.",
+        "New Output": "I\u2019m sorry to hear that. I\u2019ll connect you with a manager right away. Please hold for a moment.",
+        "Similarity": 0.42,
         "Status": "Regression Detected"
     },
     {
-        "Test Case": "This movie is okay, nothing special",
-        "Old Output": "I would classify the sentiment of this sentence as Neutral. The user doesn't express strong emotions or opinions, and the phrase \"nothing special\" implies a lack of enthusiasm, but the word \"okay\" suggests that the movie is not entirely bad either. Overall, the tone is middling and neither overwhelmingly positive nor negative.",
-        "New Output": "It seems like we're discussing two different things. You initially mentioned a product that you love, but now you're talking about a movie. Could you tell me more about the movie you're referring to? What did you like or dislike about it?",
+        "Test Case": "Could you explain the return policy?",
+        "Old Output": "Sure! I\u2019d be happy to walk you through our return policy.\n\n| **What you can return** | **Timeframe** | **Condition** | **How to return** | **Refund/Exchange** |\n|------------------------|---------------|---------------|-------------------|---------------------|\n| All items (except final\u2011sale or custom\u2011made products) | 30 days from the date of delivery | Unused, with original tags, and in the original packaging | 1. Log in to your account and go to \u201cOrder History.\u201d 2. Select the order and click \u201cReturn/Exchange.\u201d 3. Follow the prompts to print a prepaid return label. 4. Pack the item securely and drop it off at the nearest carrier location. | \u2022\u202fRefund to original payment method (within 5\u20137 business days after we receive the item).  <br>\u2022\u202fExchange for another item of equal or lesser value (subject to availability). |\n| Digital downloads | 7 days from purchase | Must be unused | Contact support with order number; we\u2019ll issue a refund or replacement. | Refund to original payment method. |\n\n**Additional details**\n\n- **Restocking fee**: None for most items. For certain categories (e.g., electronics, large appliances) a small restocking fee may apply if the item is opened or used.\n- **Shipping costs**: Return shipping is free for most orders. If you\u2019re returning an item that was defective or wrong, we\u2019ll cover the return postage. For other returns, you\u2019ll cover the shipping cost unless you\u2019re eligible for a return\u2011shipping credit.\n- **Defective or damaged items**: If the item arrives damaged or defective, please contact us within 48\u202fhours of receipt. We\u2019ll arrange a replacement or refund and cover the return shipping.\n- **Custom orders**: Custom or personalized items are non\u2011returnable unless they\u2019re defective.\n\nIf you have a specific order in mind or need help starting a return, just let me know the order number and I\u2019ll guide you through the process. Thanks for shopping with us!",
+        "New Output": "Sure! You can return most items within 30\u202fdays of purchase if they\u2019re unused and in original packaging. Just bring the receipt or order confirmation, and we\u2019ll process a refund or exchange. If you need more details, let me know!",
         "Similarity": 0.04,
         "Status": "Regression Detected"
     },
     {
-        "Test Case": "I'm so excited for my upcoming vacation",
-        "Old Output": "The sentiment of the sentence \"I'm so excited for my upcoming vacation\" is: Positive.",
-        "New Output": "That's great to hear that you're excited about your vacation. Are you planning on taking the product with you, or is there something else you're looking forward to on your trip?",
-        "Similarity": 0.3,
+        "Test Case": "Hello, I need help with my account password.",
+        "Old Output": "Hello! I\u2019m happy to help you with your account password.\n\nTo reset your password, please follow these steps:\n\n1. **Go to the login page** of our website or app.  \n2. Click the **\u201cForgot password?\u201d** link.  \n3. Enter the email address or username associated with your account.  \n4. Check your inbox (and spam/junk folder) for a password\u2011reset email.  \n5. Click the link in that email and follow the prompts to set a new password.\n\nIf you don\u2019t receive the email within a few minutes, let me know and I\u2019ll double\u2011check that we have the correct address on file.  \n\nIf you\u2019re still having trouble, feel free to share any error messages you see, and I\u2019ll help you troubleshoot further.",
+        "New Output": "Sure! To reset your password, click \u201cForgot password?\u201d on the login page, enter your email, and follow the instructions sent to you. If you don\u2019t receive an email, let me know and I\u2019ll help further.",
+        "Similarity": 0.35,
         "Status": "Regression Detected"
     },
     {
-        "Test Case": "The food at this restaurant is disgusting",
-        "Old Output": "The sentiment of the sentence \"The food at this restaurant is disgusting\" is Negative.",
-        "New Output": "That's quite a contrast. It seems like you're having two very different experiences. You're extremely satisfied with a product, but the food at the restaurant is not meeting your expectations at all. Would you like to talk more about what's not working out with the restaurant food or is there something specific you'd like to know about the product you're happy with?",
-        "Similarity": 0.04,
+        "Test Case": "Thank you for the quick response!",
+        "Old Output": "You\u2019re very welcome! If there\u2019s anything else you need or any other questions I can help with, just let me know. Have a great day!",
+        "New Output": "You\u2019re welcome! Let me know if there\u2019s anything else I can help with.",
+        "Similarity": 0.56,
         "Status": "Regression Detected"
     },
     {
-        "Test Case": "The new policy is being implemented next month",
-        "Old Output": "The sentiment of the sentence \"The new policy is being implemented next month\" is Neutral. The sentence simply states a fact about the implementation of a policy without expressing any emotion or opinion, neither positive nor negative.",
-        "New Output": "That's great to hear about the product, but I'm a bit confused. You mentioned that the new policy is being implemented next month. Could you please clarify what policy you're referring to and how it relates to the product you mentioned earlier? I'd love to understand the connection between the two.",
-        "Similarity": 0.22,
+        "Test Case": "Is there a discount for bulk orders?",
+        "Old Output": "Hello! \ud83d\udc4b\n\nThank you for reaching out. We do offer discounts for bulk orders, and we\u2019d love to help you get the best pricing possible.\n\nCould you let us know:\n- The product(s) you\u2019re interested in\n- The quantity you\u2019re looking to order\n- Any specific delivery or timeline requirements\n\nOnce we have those details, we can provide a tailored quote and outline the discount structure for you. If you have any other questions or special requests, feel free to let us know\u2014happy to assist!",
+        "New Output": "Yes, we offer tiered discounts for bulk orders. Let me know the quantity you\u2019re looking at and I\u2019ll provide a quote.",
+        "Similarity": 0.32,
         "Status": "Regression Detected"
     },
     {
-        "Test Case": "I'm really disappointed with the customer support",
-        "Old Output": "The sentiment of the sentence is: Negative. \n\nThe word \"disappointed\" has a strong negative connotation, indicating that the user's experience with the customer support was unsatisfactory.",
-        "New Output": "System Response:\n\"I'm so sorry to hear that you're having a poor experience with our customer support. Can you please tell me more about what happened? What issue were you trying to resolve, and how did our support team respond? Your feedback is invaluable in helping us improve our service.\"",
-        "Similarity": 0.02,
+        "Test Case": "I want to cancel my subscription.",
+        "Old Output": "Sure, I can help with that.  \nCould you please confirm the email address or account ID associated with the subscription you\u2019d like to cancel? Once I have that, I\u2019ll walk you through the cancellation process and let you know what to expect next. If you have any questions or need assistance with anything else, just let me know!",
+        "New Output": "Sure, I can help with that. Please confirm you\u2019d like to cancel your subscription, and I\u2019ll process it right away. If you have any questions or need a refund, let me know.",
+        "Similarity": 0.55,
         "Status": "Regression Detected"
     },
     {
-        "Test Case": "The hotel room was clean and comfortable",
-        "Old Output": "The sentiment of the sentence \"The hotel room was clean and comfortable\" is: Positive.",
-        "New Output": "That's great to hear. It sounds like you had a pleasant stay at the hotel. The cleanliness and comfort of a hotel room can really make or break a trip. Did you have a favorite amenity or feature of the room, or was there something in particular that stood out to you?",
-        "Similarity": 0.06,
+        "Test Case": "Do you offer international shipping?",
+        "Old Output": "Absolutely! We do ship internationally. Our shipping partners cover most countries worldwide, and we\u2019ll provide you with a tracking number once your order has shipped. If you let me know which country you\u2019re located in, I can give you a more precise estimate of delivery time and any applicable customs fees. Feel free to ask if you need help with anything else!",
+        "New Output": "Yes, we ship internationally. Shipping costs and delivery times vary by destination\u2014please check our shipping page for details.",
+        "Similarity": 0.2,
         "Status": "Regression Detected"
     },
     {
-        "Test Case": "The company's financial report is available online",
-        "Old Output": "The sentiment of the sentence \"The company's financial report is available online\" is Neutral. The sentence is simply stating a fact without expressing any emotion or opinion, neither positive nor negative.",
-        "New Output": "That's great to know. However, I was just sharing my positive experience with the product. Is there something specific you'd like to know about the company's financial report or how it relates to the product?",
-        "Similarity": 0.17,
+        "Test Case": "Please provide the tracking number for my shipment.",
+        "Old Output": "I\u2019m happy to help! Could you please share your order number or the email address associated with the purchase? Once I have that, I\u2019ll look up the tracking details for you right away.",
+        "New Output": "I\u2019m sorry, but I don\u2019t have that information on hand. Could you please provide your order number or account details so I can look up the tracking number for you?",
+        "Similarity": 0.57,
         "Status": "Regression Detected"
     }
 ]

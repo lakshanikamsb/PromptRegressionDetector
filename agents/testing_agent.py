@@ -30,7 +30,7 @@ User:
             }
         ],
 
-        temperature=0.2
+        temperature=0
     )
 
     return response.choices[0].message.content

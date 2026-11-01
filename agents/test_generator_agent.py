@@ -1,25 +1,9 @@
 import json
-import os
 import time
 
-from groq import Groq
-from dotenv import load_dotenv
+from groq_client import create_groq_client
 
-
-BASE_DIR = os.path.dirname(
-    os.path.dirname(os.path.abspath(__file__))
-)
-
-ENV_PATH = os.path.join(BASE_DIR, ".env")
-
-load_dotenv(ENV_PATH, override=True)
-
-api_key = os.getenv("GROQ_API_KEY", "").strip()
-
-if not api_key:
-    raise ValueError("GROQ_API_KEY not found in project .env file")
-
-client = Groq(api_key=api_key)
+client = create_groq_client()
 
 MODEL = "openai/gpt-oss-20b"
 

@@ -1,5 +1,5 @@
 
-name: Prompt Regression Detector CI
+name: Prompt Regression Detector CI/CD
 
 on:
   push:
@@ -10,12 +10,16 @@ on:
     branches:
       - main
 
+  workflow_dispatch:
+
 jobs:
   test:
+    name: Test Prompt Regression Detector
     runs-on: ubuntu-latest
 
     env:
-      GROQ_API_KEY: ci-test-key
+      GROQ_API_KEY: test-only-not-a-real-key
+      CI_ARTIFACT_DIR: ${{ runner.temp }}/prompt-regression-${{ github.run_id }}-${{ github.run_attempt }}
 
     steps:
       - name: Checkout repository
@@ -27,15 +31,63 @@ jobs:
           python-version: "3.14"
 
       - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-          pip install pytest
+        run: python -m pip install --upgrade pip -r requirements.txt
 
       - name: Run automated tests
-        run: |
-          python -m pytest -v
+        run: python -m pytest -v
 
       - name: Check Python syntax
+        run: python -m compileall -q .
+
+      - name: Validate pipeline with mocked LLM responses
+        run: python ci_validation.py --output-dir "$CI_ARTIFACT_DIR"
+
+      - name: Run functional regression quality gate
+        run: >-
+          python quality_gate.py
+          --report "$CI_ARTIFACT_DIR/reports/report.json"
+          --invariants "$CI_ARTIFACT_DIR/reports/behavioral_invariant_results.json"
+
+      - name: Save fresh evaluation and test artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: prompt-regression-ci-${{ github.run_id }}
+          path: |
+            ${{ env.CI_ARTIFACT_DIR }}/reports/
+            ${{ env.CI_ARTIFACT_DIR }}/responses/
+            ${{ env.CI_ARTIFACT_DIR }}/testcases/
+          if-no-files-found: warn
+
+  groq-integration:
+    name: Verify Groq API
+    runs-on: ubuntu-latest
+    needs: test
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+
+      - name: Install Groq dependency
+        run: pip install groq
+
+      - name: Check Groq API secret is configured
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: |
-          python -m compileall -q .
+          if [ -z "$GROQ_API_KEY" ]; then
+            echo "::error::GROQ_API_KEY is not configured in repository Actions secrets."
+            exit 1
+          fi
+
+      - name: Verify Groq connection
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          python -c "import os; from groq import Groq; client = Groq(api_key=os.environ['GROQ_API_KEY']); client.models.list(); print('Groq API connection successful')"

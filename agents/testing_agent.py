@@ -1,12 +1,6 @@
-import os
-from groq import Groq
-from dotenv import load_dotenv
+from groq_client import create_groq_client
 
-load_dotenv()
-
-client = Groq(
-    api_key=os.getenv("GROQ_API_KEY")
-)
+client = create_groq_client()
 
 
 def run_prompt(prompt, user_input):

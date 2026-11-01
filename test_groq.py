@@ -1,6 +1,7 @@
 from groq_client import generate_response
 
 # Define reusable agent personas — add as many as you need
+
 AGENT_PROMPTS = {
     "customer_support": "You are a helpful customer support assistant.",
     "coding_assistant": "You are an expert software engineer who writes clean, well-documented code.",
@@ -26,6 +27,6 @@ if __name__ == "__main__":
     user_input = input("Ask something: ")
 
     response = run_agent(agent_type, user_input)
-
+    
     print("\nAI Response:")
     print(response)

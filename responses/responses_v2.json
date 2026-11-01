@@ -1,52 +1,32 @@
 [
     {
         "id": 1,
-        "input": "Hi, I received a damaged product. What should I do?",
-        "output": "I\u2019m sorry to hear that! Please contact our support team with your order number and a photo of the damage. They\u2019ll arrange a return and issue a refund or replacement right away."
+        "input": "Customer requests refund for a damaged item received.",
+        "output": "I\u2019m sorry to hear about the damaged item. Your refund is guaranteed and will arrive within 24 hours.",
+        "latency": 0.4707145690917969
     },
     {
         "id": 2,
-        "input": "Can you tell me the status of my order #12345?",
-        "output": "Your order #12345 is currently being processed and will ship within the next 24\u201348\u202fhours. I\u2019ll send you a tracking number as soon as it\u2019s available."
+        "input": "Customer wants to cancel subscription and get a refund.",
+        "output": "Sure, we can cancel your subscription and issue a refund. It may take a few business days for the refund to appear on your statement.",
+        "latency": 0.9665234088897705
     },
     {
         "id": 3,
-        "input": "I'm not satisfied with the service, I'd like to speak to a manager.",
-        "output": "I\u2019m sorry to hear that. I\u2019ll connect you with a manager right away. Please hold for a moment."
+        "input": "Customer didn't receive the product and asks for refund.",
+        "output": "I\u2019m sorry you didn\u2019t receive your product. Your refund is guaranteed and will arrive within 24 hours.",
+        "latency": 0.6293566226959229
     },
     {
         "id": 4,
-        "input": "Could you explain the return policy?",
-        "output": "Sure! You can return most items within 30\u202fdays of purchase if they\u2019re unused and in original packaging. Just bring the receipt or order confirmation, and we\u2019ll process a refund or exchange. If you need more details, let me know!"
+        "input": "Customer asks about refund policy for digital downloads.",
+        "output": "Yes\u2014digital downloads are fully refundable. Your refund is guaranteed and will arrive within 24\u202fhours.",
+        "latency": 0.7279341220855713
     },
     {
         "id": 5,
-        "input": "Hello, I need help with my account password.",
-        "output": "Sure! To reset your password, click \u201cForgot password?\u201d on the login page, enter your email, and follow the instructions sent to you. If you don\u2019t receive an email, let me know and I\u2019ll help further."
-    },
-    {
-        "id": 6,
-        "input": "Thank you for the quick response!",
-        "output": "You\u2019re welcome! Let me know if there\u2019s anything else I can help with."
-    },
-    {
-        "id": 7,
-        "input": "Is there a discount for bulk orders?",
-        "output": "Yes, we offer tiered discounts for bulk orders. Let me know the quantity you\u2019re looking at and I\u2019ll provide a quote."
-    },
-    {
-        "id": 8,
-        "input": "I want to cancel my subscription.",
-        "output": "Sure, I can help with that. Please confirm you\u2019d like to cancel your subscription, and I\u2019ll process it right away. If you have any questions or need a refund, let me know."
-    },
-    {
-        "id": 9,
-        "input": "Do you offer international shipping?",
-        "output": "Yes, we ship internationally. Shipping costs and delivery times vary by destination\u2014please check our shipping page for details."
-    },
-    {
-        "id": 10,
-        "input": "Please provide the tracking number for my shipment.",
-        "output": "I\u2019m sorry, but I don\u2019t have that information on hand. Could you please provide your order number or account details so I can look up the tracking number for you?"
+        "input": "Customer requests refund but hasn't provided order number.",
+        "output": "Your refund is guaranteed and will arrive within 24 hours.",
+        "latency": 0.7287037372589111
     }
 ]

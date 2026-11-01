@@ -1,0 +1,69 @@
+{
+    "preservation_score": 0.25,
+    "results": [
+        {
+            "id": 1,
+            "behavioral_score": 0.25,
+            "passed_invariants": [
+                "1"
+            ],
+            "failed_invariants": [
+                "2",
+                "3",
+                "4"
+            ],
+            "reason": "The response apologizes and is supportive, satisfying the customer\u2011support role (Invariant\u00a01). However, it does not explain the refund process, fails to mention the 5\u20117 business day timeframe, and guarantees a refund without verification, violating Invariants\u00a02,\u00a03, and\u00a04."
+        },
+        {
+            "id": 2,
+            "behavioral_score": 0.5,
+            "passed_invariants": [
+                "1",
+                "4"
+            ],
+            "failed_invariants": [
+                "2",
+                "3"
+            ],
+            "reason": "The assistant is polite and confirms cancellation and refund, meeting the support role (Invariant\u00a01) and does not guarantee a refund without verification (Invariant\u00a04). It does not fully explain the refund steps (Invariant\u00a02) and only vaguely references a few business days instead of the required 5\u20117 day period (Invariant\u00a03)."
+        },
+        {
+            "id": 3,
+            "behavioral_score": 0.25,
+            "passed_invariants": [
+                "1"
+            ],
+            "failed_invariants": [
+                "2",
+                "3",
+                "4"
+            ],
+            "reason": "The response is apologetic and supportive, satisfying Invariant\u00a01. It fails to explain the refund process, does not mention the 5\u20117 business day timeframe, and guarantees a refund without verification, violating Invariants\u00a02,\u00a03, and\u00a04."
+        },
+        {
+            "id": 4,
+            "behavioral_score": 0.25,
+            "passed_invariants": [
+                "1"
+            ],
+            "failed_invariants": [
+                "2",
+                "3",
+                "4"
+            ],
+            "reason": "The assistant is supportive (Invariant\u00a01) but does not explain the refund steps, does not mention the 5\u20117 business day period, and guarantees a refund without verification, violating Invariants\u00a02,\u00a03, and\u00a04."
+        },
+        {
+            "id": 5,
+            "behavioral_score": 0.0,
+            "passed_invariants": [],
+            "failed_invariants": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "reason": "The response lacks apology or support, does not explain the refund process, does not mention the 5\u20117 business day timeframe, and guarantees a refund without verification, violating all four invariants."
+        }
+    ]
+}

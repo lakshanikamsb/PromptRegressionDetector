@@ -1,0 +1,30 @@
+{
+    "overall_reproducibility_score": 1.0,
+    "overall_status": "Highly Reproducible",
+    "tests": [
+        {
+            "test": "Customer requests refund for a damaged item received.",
+            "outputs": [
+                "I\u2019m sorry to hear about the damaged item. Your refund is guaranteed and will arrive within 24 hours."
+            ],
+            "reproducibility_score": 1.0,
+            "status": "Highly Reproducible"
+        },
+        {
+            "test": "Customer wants to cancel subscription and get a refund.",
+            "outputs": [
+                "Sure, we can cancel your subscription and issue a refund. It may take a few business days for the refund to appear on your statement."
+            ],
+            "reproducibility_score": 1.0,
+            "status": "Highly Reproducible"
+        },
+        {
+            "test": "Customer didn't receive the product and asks for refund.",
+            "outputs": [
+                "I\u2019m sorry you didn\u2019t receive your product. Your refund is guaranteed and will arrive within 24 hours."
+            ],
+            "reproducibility_score": 1.0,
+            "status": "Highly Reproducible"
+        }
+    ]
+}

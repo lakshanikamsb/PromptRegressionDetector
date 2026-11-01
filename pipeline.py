@@ -389,7 +389,6 @@ def run_regression(prompt_v1, prompt_v2):
             evaluation
         )
 
-
         report.append(
             {
                 "Test Case": old_case["input"],
@@ -434,7 +433,7 @@ def run_regression(prompt_v1, prompt_v2):
             file,
             indent=4
         )
-
+        
 
     # --------------------------------------------------
     # STEP 9: OPTIMIZATION

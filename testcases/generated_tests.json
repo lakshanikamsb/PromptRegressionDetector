@@ -1,12 +1,7 @@
 [
-    "Hi, I received a damaged product. What should I do?",
-    "Can you tell me the status of my order #12345?",
-    "I'm not satisfied with the service, I'd like to speak to a manager.",
-    "Could you explain the return policy?",
-    "Hello, I need help with my account password.",
-    "Thank you for the quick response!",
-    "Is there a discount for bulk orders?",
-    "I want to cancel my subscription.",
-    "Do you offer international shipping?",
-    "Please provide the tracking number for my shipment."
+    "Customer requests refund for a damaged item received.",
+    "Customer wants to cancel subscription and get a refund.",
+    "Customer didn't receive the product and asks for refund.",
+    "Customer asks about refund policy for digital downloads.",
+    "Customer requests refund but hasn't provided order number."
 ]

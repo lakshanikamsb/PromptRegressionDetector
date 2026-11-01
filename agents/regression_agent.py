@@ -6,7 +6,7 @@ def detect(evaluation):
     Different wording alone should not cause a regression.
     Latency is retained as a separate performance signal.
     """
-
+    
     semantic_similarity = evaluation.get("Semantic Similarity", 1)
     behavioral_score = evaluation.get("Behavioral Score", 1)
     correctness = evaluation.get("Correctness", 1)

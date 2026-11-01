@@ -19,7 +19,6 @@ jobs:
 
     env:
       GROQ_API_KEY: test-only-not-a-real-key
-      CI_ARTIFACT_DIR: ${{ runner.temp }}/prompt-regression-${{ github.run_id }}-${{ github.run_attempt }}
 
     steps:
       - name: Checkout repository
@@ -40,9 +39,13 @@ jobs:
         run: python -m compileall -q .
 
       - name: Validate pipeline with mocked LLM responses
+        env:
+          CI_ARTIFACT_DIR: ${{ runner.temp }}/prompt-regression-${{ github.run_id }}-${{ github.run_attempt }}
         run: python ci_validation.py --output-dir "$CI_ARTIFACT_DIR"
 
       - name: Run functional regression quality gate
+        env:
+          CI_ARTIFACT_DIR: ${{ runner.temp }}/prompt-regression-${{ github.run_id }}-${{ github.run_attempt }}
         run: >-
           python quality_gate.py
           --report "$CI_ARTIFACT_DIR/reports/report.json"
@@ -54,9 +57,9 @@ jobs:
         with:
           name: prompt-regression-ci-${{ github.run_id }}
           path: |
-            ${{ env.CI_ARTIFACT_DIR }}/reports/
-            ${{ env.CI_ARTIFACT_DIR }}/responses/
-            ${{ env.CI_ARTIFACT_DIR }}/testcases/
+            ${{ runner.temp }}/prompt-regression-${{ github.run_id }}-${{ github.run_attempt }}/reports/
+            ${{ runner.temp }}/prompt-regression-${{ github.run_id }}-${{ github.run_attempt }}/responses/
+            ${{ runner.temp }}/prompt-regression-${{ github.run_id }}-${{ github.run_attempt }}/testcases/
           if-no-files-found: warn
 
   groq-integration:

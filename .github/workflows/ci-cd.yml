@@ -14,6 +14,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    env:
+      GROQ_API_KEY: ci-test-key
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -30,8 +33,6 @@ jobs:
           pip install pytest
 
       - name: Run automated tests
-        env:
-          GROQ_API_KEY: ci-test-key
         run: |
           python -m pytest -v
 
